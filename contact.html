@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 100%;
+      height: 100vh;
+     
+
+    }
+    nav {
+      width: 100%;
+      display: flex;
+      padding: 10px;
+      justify-content: space-around;
+      align-items: center;
+      /* position: fixed; */
+      background-color: red;
+      box-shadow: 0 0 10px grey;
+      /* z-index: 1000; */
+    }
+    nav .logo img {
+      margin-left: -250px;
+      cursor: pointer;
+
+}
+    nav ul li {
+      list-style-type: none;
+      display: inline-block;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 25px;
+      color: aliceblue;
+    }
+    nav ul li a:hover {
+     border: none;
+     background-color: yellow;
+     width: 30px;
+     height: 40px;
+     border-radius: 5px;
+     color: black;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:40px ;
+  gap: 60px;
+  padding: 20px;
+}
+.form{
+  width: 500px;
+  height: 630px;
+  margin-top: 100px;
+  background-color: rgb(225, 231, 231);
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 10px;
+  font-size: 27px;
+  box-shadow: 0 0 10px grey;
+  border-radius: 10px;
+}
+
+.form input {
+  padding: 10px;
+  border: 3px solid #fac031;
+  border-radius: 5px;
+}
+.form button {
+  padding: 10px;
+  border: 3px solid #fac031;
+  border-radius: 5px;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+ 
+}
+
+.img_div img{
+  width: 700px;
+}
+
+
+footer {
+  margin-top: 30px;
+  width: 100%;
+  padding: 30px 0 0 20px;
+  background-color: red;
+}
+
+footer .footer_main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+footer .footer_main .footer_tag{
+  text-align: center;
+}
+
+footer .footer_main .footer_tag h2 {
+  color: white;
+  margin-bottom: 25px ;
+  font-size: 30px;
+}
+footer .footer_main .footer_tag p {
+  margin: 10px 0;
+}
+footer .footer_main .footer_tag i{
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="./images/chef.png" alt="logo" height="70px" width="80px">
+    </div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="img_div">
+    <img src="./images/restaurant.png" alt="restaurant">
+  </div>
+
+    <div class="form">
+
+     <label for="">Name</label>
+     <input type="text" placeholder="enter your name"><br>
+     <label for="">Email</label>
+     <input type="email" placeholder="enter your email"><br>
+     <label for="">Phone number</label>
+     <input type="tel" placeholder="enter your number"><br>
+     <label for="">address</label>
+     <input type="text" placeholder="enter your address"><br>
+     <button>Contact</button>
+
+
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer_main">
+  
+      <div class="footer_tag">
+        <h2>Location</h2>
+        <p>india</p>
+        <p>USA</p>
+        <p>japan</p>
+      </div>
+  
+      <div class="footer_tag">
+        <h2>Quick links</h2>
+        <p>Home</p>
+        <p>About</p>
+        <p>Menu</p>
+        <p>contact</p>
+      </div>
+  
+      <div class="footer_tag">
+        <h2>Contact</h2>
+        <p>+91 4579932117821</p>
+        <p>+91 5475219136455</p>
+        <p>mshotel@gmail.com</p>
+      </div>
+  
+      <div class="footer_tag">
+        <h2>Follows</h2>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+      </div>
+  
+  
+  
+    </div> 
+  </footer>
+</body>
+</html>
